@@ -5,7 +5,12 @@ export const SIDRA = {
   name: 'SidraChain',
   nativeCurrency: { name: 'SDA', symbol: 'SDA', decimals: 18 },
   rpcUrls: { default: { http: ['https://node.sidrachain.com'] } },
-  blockExplorers: { default: { url: 'https://ledger.sidrachain.com' } },
+  blockExplorers: { 
+    default: { 
+      name: 'Sidra Explorer', 
+      url: 'https://ledger.sidrachain.com' 
+    } 
+  },
 } as const
 
 export const CHAINS = [SIDRA] as const
